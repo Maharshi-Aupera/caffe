@@ -778,10 +778,10 @@ void Net<Dtype>::CopyTrainedLayersFrom(const string& trained_filename) {
   } else {
     CopyTrainedLayersFromBinaryProto(trained_filename);
   }
-}
 #else
   CopyTrainedLayersFromBinaryProto(trained_filename);
 #endif
+}
 
 template <typename Dtype>
 void Net<Dtype>::CopyTrainedLayersFromBinaryProto(
